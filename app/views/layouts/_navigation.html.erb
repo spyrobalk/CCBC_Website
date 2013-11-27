@@ -1,14 +1,46 @@
-<nav>
+<nav id="menu">
   <ul>
     <li><%=link_to "Home", root_path %> </li>
     <li><%=link_to "About", about_path %> </li>
     <li><%=link_to "How To Join", howtojoin_path %> </li>
     <li><%=link_to "What You Need", whatyouneed_path %> </li>
-    <li><%=link_to "2013 Programme", programme2013_path %> </li>
+    <li><%=link_to "Programme 2013", programme2013s_path %> </li>
     <li><%=link_to "Newsletters", newsletters_path %> </li>
     <li><%=link_to "Club Matters", clubmatters_path %> </li>
     <li><%=link_to "How To Get There", howtogetthere_path %> </li>
     <li><%=link_to "Book A Lawn", bookalawn_path %> </li>
-    <li><%=link_to "Links to Croquet Sites", linkstocroquetsites_path %> </li>
+    <li><%=link_to "Links to Croquet Sites" %> 
+    <nav id="menu">
+  <ul>
+    <li> <%=link_to "The Croquet Association" %>
+    <nav id="menu">
+    <ul>
+      <li><%=link_to "CA Home", "http://www.croquet.org.uk/" %></li>
+      <li><%=link_to "CA Events","http://www.croquet.org.uk/tournament/" %></li>
+    </ul>
+    </nav>
+    </li>
+    <li> <%=link_to "SECF", "http://www.southeastcroquet.org.uk/" %></li>
+    <li> <%=link_to "Croquet Academy", "http://www.thecroquetacademy.com/" %></li>
+    <li> <%=link_to "Croquet Equipment" %>
+    <nav id="menu">
+    <ul>
+      <li><%=link_to "Mallets etc.", "http://www.oxfordcroquet.com/equip/" %></li>
+      <li><%=link_to "Whites","http://www.bowlsdirect.com/contact.htm" %></li>
+    </ul>
+    </nav>
+    </li>
+    <li> <%=link_to "Croquet Glossary", "http://cornwall-croquet.org.uk/croquet_glossary.htm" %></li>
+    <li> <%=link_to "Croquet Rules"%>
+      <nav id="menu">
+    <ul>
+      <li><%=link_to "Association Rules", "http://www.croquet.org.uk/association/laws.html" %></li>
+      <li><%=link_to "Golf Rules","http://www.croquet.org.uk/golf/laws/contents.htm" %></li>
+    </ul>
+    </nav>
+    </li>
+  </ul>
+</nav>
+    </li>
   </ul>
 </nav>

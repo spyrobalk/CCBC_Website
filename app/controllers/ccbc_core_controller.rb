@@ -15,13 +15,10 @@ class CcbcCoreController < ApplicationController
     @title="What You Need"
   end
 
-  def programme2013
-    @title="2013 Programme"
-  end
 
-  def newsletters
-    @title="Newsletters"
-  end
+ # def newsletters
+ #   @title="Newsletters"
+ # end
 
   def clubmatters
     @title="Club Matters"

@@ -1,8 +1,11 @@
 // Place all the styles related to the CcbcCore controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@font-face { 
-  font-family: Jenna Sue; 
-    src: url('../fonts/JennaSue-webfont.eot'); 
-    src: local("Jenna Sue"), url('../fonts/JennaSue-webfont.ttf'); 
+
+body{
+background: url(croquet.gif);
+background-repeat: no-repeat;
+background-position: center;
 }
+
+

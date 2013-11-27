@@ -1,4 +1,10 @@
 CCBCWebsite::Application.routes.draw do
+  resources :newsletters
+
+  resources :programme2013s
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   root :to => 'ccbc_core#home'
   # get "ccbc_core/home"
   match "/about", :to => 'ccbc_core#about', via: :get
@@ -7,9 +13,9 @@ CCBCWebsite::Application.routes.draw do
   # get "ccbc_core/howtojoin"
   match "/whatyouneed", :to => 'ccbc_core#whatyouneed', via: :get
   #get "ccbc_core/whatyouneed"
-  match "/programme2013", :to => 'ccbc_core#programme2013', via: :get
+  # match "/programme2013", :to => 'ccbc_core#programme2013', via: :get
   #get "ccbc_core/programme2013"
-  match "/newsletters", :to => 'ccbc_core#newsletters', via: :get
+  # match "/newsletters", :to => 'ccbc_core#newsletters', via: :get
   #get "ccbc_core/newsletters"
   match "/clubmatters", :to => 'ccbc_core#clubmatters', via: :get
   #get "ccbc_core/clubmatters"

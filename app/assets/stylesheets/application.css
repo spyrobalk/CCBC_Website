@@ -12,3 +12,61 @@
  *= require normalize
  *= require_tree .
  */
+
+h {
+font-size: 17px;
+color: #347C17;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 3px;
+} 
+
+body {
+  border:double 4px #197519;
+-moz-border-radius: 25px;
+-webkit-border-radius: 25px;
+border-radius: 25px;
+-moz-box-shadow:inset 10px 10px 75px #000000;
+-webkit-box-shadow:inset 10px 10px 75px #000000;
+box-shadow:inset 10px 10px 75px #000000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+div#container {
+  margin: auto;
+  width: 60%;
+}
+p {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 100%;
+text-align:center;
+border-radius: 25px;  
+margin: 10px, 50px, 10px, 50px;
+}
+
+#menu {
+  font-size: 15px;
+  color: #F0FFFF;
+  font-weight:bold;
+}
+
+header {
+transition:All 1s linear;
+-webkit-transition:All 1s linear;
+-moz-transition:All 1s linear;
+-o-transition:All 1s linear;
+transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+-moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+-o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+-ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+}
+header:hover{
+transform: rotate(0deg) scale(1.128) skew(0deg) translate(3px);
+-webkit-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+-moz-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+-o-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+-ms-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+}
