@@ -31,6 +31,10 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 gem 'carrierwave'
 
+gem 'devise'
+
+gem 'event-calendar', :require => 'event_calendar'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

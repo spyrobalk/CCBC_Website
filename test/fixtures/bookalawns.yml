@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lawn: MyString
+  start_at: 2013-11-30 23:51:48
+  end_at: 2013-11-30 23:51:48
+
+two:
+  lawn: MyString
+  start_at: 2013-11-30 23:51:48
+  end_at: 2013-11-30 23:51:48

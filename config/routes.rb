@@ -1,4 +1,8 @@
 CCBCWebsite::Application.routes.draw do
+  resources :bookalawns
+
+  match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}, via: :get
+  devise_for :users
   resources :newsletters
 
   resources :programme2013s
@@ -21,7 +25,7 @@ CCBCWebsite::Application.routes.draw do
   #get "ccbc_core/clubmatters"
   match "/howtogetthere", :to => 'ccbc_core#howtogetthere', via: :get
   #get "ccbc_core/howtogetthere"
-   match "/bookalawn", :to => 'ccbc_core#bookalawn', via: :get
+   # match "/bookalawn", :to => 'ccbc_core#bookalawn', via: :get
   #get "ccbc_core/bookalawn"
   match "/linkstocroquetsites", :to => 'ccbc_core#linkstocroquetsites', via: :get
   #get "ccbc_core/linkstocroquetsites"

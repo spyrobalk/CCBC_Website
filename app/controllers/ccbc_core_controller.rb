@@ -1,4 +1,5 @@
 class CcbcCoreController < ApplicationController
+  
   def home
     @title="Home"
   end
@@ -28,9 +29,9 @@ class CcbcCoreController < ApplicationController
     @title="How To Get There"
   end
 
-  def bookalawn
-    @title="Book A Lawn"
-  end
+ # def bookalawn
+  #  @title="Book A Lawn"
+ # end
 
   def linkstocroquetsites
     @title="Links to Croquet Sites"

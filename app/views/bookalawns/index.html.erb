@@ -1,0 +1,41 @@
+<%= javascript_include_tag 'event_calendar' %>
+<h1>Listing Bookings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lawn</th>
+      <th>Start at</th>
+      <th>End at</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bookalawns.each do |bookalawn| %>
+      <tr>
+        <td><%= bookalawn.lawn %></td>
+        <td><%= bookalawn.start_at %></td>
+        <td><%= bookalawn.end_at %></td>
+        <td><%= link_to 'Show', bookalawn %></td>
+        <td><%= link_to 'Edit', edit_bookalawn_path(bookalawn) %></td>
+        <td><%= link_to 'Destroy', bookalawn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Booking', new_bookalawn_path %>
+
+<br>
+<br>
+
+<%= stylesheet_link_tag "event_calendar" %>
+
+
+<%= raw(event_calendar) %>
+

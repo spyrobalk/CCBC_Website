@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lawn:</strong>
+  <%= @bookalawn.lawn %>
+</p>
+
+<p>
+  <strong>Start at:</strong>
+  <%= @bookalawn.start_at %>
+</p>
+
+<p>
+  <strong>End at:</strong>
+  <%= @bookalawn.end_at %>
+</p>
+
+<%= link_to 'Edit', edit_bookalawn_path(@bookalawn) %> |
+<%= link_to 'Back', bookalawns_path %>
+

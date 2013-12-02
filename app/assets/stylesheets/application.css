@@ -38,6 +38,19 @@ div#container {
   margin: auto;
   width: 60%;
 }
+div#logstat{
+ margin: auto;
+  width: 30%;
+ border:dotted 3px #0bb37b;
+-webkit-border-top-left-radius:75px;
+-webkit-border-top-right-radius:75px;
+-webkit-border-bottom-left-radius:0px;
+-webkit-border-bottom-right-radius:75px;
+border-top-left-radius:75px;
+border-top-right-radius:75px;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:75px;
+}
 p {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 100%;

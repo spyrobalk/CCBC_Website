@@ -5,7 +5,8 @@ class NewslettersController < InheritedResources::Base
   # GET /newsletters.json
   def index
     @title = "Newsletters"
-    @newsletters = Newsletter.all(:group =>'date')
+    # The following line retrieves the newsletters from the database table using a GROUP_BY and ORDER_BY ... DESC SQL query so the elements are grouped by year in a descending order.
+    @newsletters = Newsletter.all(:group =>'date', :order =>'date DESC')
   end
 
   # GET /newsletters/1
